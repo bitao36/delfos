@@ -1,16 +1,18 @@
 <?php
 
 date_default_timezone_set("America/Bogota");
-//Esta es la ruta base del proyecto fractaldelfosbot
-$ruta_base="/home/gustavot/public_html/fractaldelfosbot";
+//Coloca aquí la ruta base del hosting 
+$ruta_base="/home/usuario/";
+//Coloca aquí la ruta del proyecto fractaldelfosbot
+$ruta_proyecto="public_html/fractaldelfosbot/";
 
-include('/home/gustavot/bot_config.php'); 
-include($ruta_base.'/cron/mensaje_regalos.php');
-include($ruta_base.'/core/conexionDB.php');
-include($ruta_base.'/core/chatBot.php');
-include ($ruta_base.'/core/delfos.php');
-include ($ruta_base.'/utils/Misc.php');
-include($ruta_base.'/models/usuario.php');
+include($ruta_base.'bot_config.php'); 
+include($ruta_proyecto.'cron/mensaje_regalos.php');
+include($ruta_proyecto.'core/conexionDB.php');
+include($ruta_proyecto.'core/chatBot.php');
+include ($ruta_proyecto.'core/delfos.php');
+include ($ruta_proyecto.'utils/Misc.php');
+include($ruta_proyecto.'models/usuario.php');
 
 
 $ruta_bitacora=__DIR__.'/bitacora_cronjob.log';

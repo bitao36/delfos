@@ -35,5 +35,10 @@ que selecciones se ejecute el archivo que envía cada mensaje.
 El archivo que cumple esta función esta en la  carpeta cron y se llama
  delfos_bot.php
 
+/* Atención */
+ Debes ingresar al archivo delfos_bot.php y cambiar la ruta base de tu hosting
+ y la ruta del proyecto
+
+
 
 
