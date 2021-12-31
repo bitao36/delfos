@@ -1,8 +1,12 @@
 <?php
-date_default_timezone_set("America/Bogota");
-//Este archivo esta en la carpeta padre que es inaccesible
-// y contiene el token del bot y los datos de acceso a la base de datos
-include('../../bot_config.php'); 
+
+include('config.php'); 
+
+/* Este archivo esta en la carpeta padre que es inaccesible porque contiene
+ información sensible como el token del bot y los datos de acceso a la base de datos
+ */
+
+include(RUTA_BASE.'bot_config.php'); 
 include ('core/delfos.php');
 include ('utils/Misc.php');
 include ('core/chatBot.php');
